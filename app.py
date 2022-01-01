@@ -8,6 +8,7 @@ from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
 from fsm import TocMachine
+# from transitions import Machine
 from utils import send_text_message
 
 load_dotenv()
@@ -32,7 +33,7 @@ machine = TocMachine(
     ],
     initial="user",
     auto_transitions=False,
-    show_conditions=True,
+    # show_conditions=True
 )
 
 app = Flask(__name__, static_url_path="")
