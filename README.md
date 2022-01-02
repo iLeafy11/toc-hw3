@@ -71,7 +71,7 @@ Or You can use [servo](http://serveo.net/) to expose local servers to the intern
 
 
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
+![fsm](./img/fsm.png)
 
 ## Usage
 The initial state is set to `user`.
@@ -84,6 +84,9 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
 	* Input: "go to state2"
 		* Reply: "I'm entering state2"
+	
+	* Input: "go to state3"
+		* Reply: "I'm entering state3"
 
 ## Deploy
 Setting to deploy webhooks on Heroku.
